@@ -164,8 +164,8 @@ def checkIfInBoard(v, b, i, j, s, sl) :
 	else:
 		return False
 
-	#If isValid is true, then next letter exist. Find where that index is and recursively
-	#call it to find next index
+	'''If isValid is true, then next letter exist. Find where that index is and recursively
+	call it to find next index'''
 	if isValid == True :
 		if ((j-1 > -1) and (var == b[i][j-1]) and (([i, j-1]) not in sl)) :
               		if checkIfInBoard(v, b, i, j-1, s+1, sl + [[i, j-1]]) :
